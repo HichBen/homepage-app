@@ -14,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.github/workflows/aws.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage-service/app/api/homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage-service/app/api/homepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homepage-service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage-service/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

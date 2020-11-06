@@ -6,8 +6,12 @@ from ..api import db_manager
 
 homepage = APIRouter()
 
+@homepage.get('/')
+async def check_service():
+    a = {"status": 200}
+    return a
 
-@homepage.post('/', response_model=HomePageOut, status_code=201)
+@homepage.post('/homepage/', response_model=HomePageOut, status_code=201)
 async def add_homepage(payload: HomePageIn):
     group_id = await db_manager.add_homepage(payload)
     response = {
@@ -17,7 +21,7 @@ async def add_homepage(payload: HomePageIn):
     return response
 
 
-@homepage.get('/{id}/', response_model=HomePage)
+@homepage.get('/homepage/{id}/', response_model=HomePage)
 async def get_homepage(id: int):
     homep = await db_manager.get_homepage(id)
     if not homep:
@@ -25,7 +29,7 @@ async def get_homepage(id: int):
     return homep
 
 
-@homepage.patch('/{id}/', response_model=HomePageUpdate)
+@homepage.patch('/homepage/{id}/', response_model=HomePageUpdate)
 async def update_homepage(id: int, payload: HomePageUpdate):
     stored_hp_data = await db_manager.get_homepage(id)
     if not stored_hp_data:
@@ -40,7 +44,7 @@ async def update_homepage(id: int, payload: HomePageUpdate):
     return jsonable_encoder(updated_homepage)
 
 
-@homepage.delete('/{id}/', response_model=None)
+@homepage.delete('/homepage/{id}/', response_model=None)
 async def delete_homepage(id: int):
     homep = await db_manager.get_homepage(id)
     if not homep:
@@ -48,6 +52,6 @@ async def delete_homepage(id: int):
     return await db_manager.delete_homepage(id)
 
 
-@homepage.get('/')
+@homepage.get('/homepage')
 async def get_homepages():
     return await db_manager.get_all_homepages()
