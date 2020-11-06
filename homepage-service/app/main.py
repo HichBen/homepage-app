@@ -14,4 +14,4 @@ async def startup():
 async def shutdown():
     await database.disconnect()
 
-app.include_router(homepage, prefix='/api/homepage', tags=['homepage'])
+app.include_router(homepage)

@@ -29,8 +29,8 @@ services:
     healthcheck:
       test: [ "CMD", "pg_isready", "-q", "-d", "homepage_db_dev", "-U", "Hichem" ]
       timeout: 45s
-      interval: 30s
-      retries: 10
+      interval: 5s
+      retries: 5
 
 volumes:
   postgres_data_homepage:
