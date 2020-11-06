@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  homepage_service:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+    volumes:
+      - ./homepage-service/:/app/
+    ports:
+      - "80:8000"
+    links:
+      - homepage_db
+    depends_on:
+      homepage_db:
+        condition: service_healthy
+    environment:
+      - DATABASE_URI=postgresql://Hichem:Hich@homepage_db/homepage_db_dev
+
+  homepage_db:
+    image: postgres:12.1-alpine
+    volumes:
+      - postgres_data_homepage:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=Hichem
+      - POSTGRES_PASSWORD=Hich
+      - POSTGRES_DB=homepage_db_dev
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-q", "-d", "homepage_db_dev", "-U", "Hichem" ]
+      timeout: 45s
+      interval: 30s
+      retries: 10
+
+volumes:
+  postgres_data_homepage:
