@@ -1,11 +1,11 @@
 # homepage_api
 Link of the api documentation that was deployed in AWS:
- - http://35.175.138.192:8080/api/homepage/docs
+ - http://homepageservice-env.eba-34hauims.us-east-2.elasticbeanstalk.com/homepage/docs
     
 ## Steps to run it locally
  - Make sure you have installed `docker` and `docker-compose`
  - Run `docker-compose up -d`
- - Head over to http://localhost:8080/api/homepage/docs for the api documentation
+ - Head over to http://localhost:8080/homepage/docs for the api documentation
  
 ## Different Endpoints:
 The api has 5 endpoints:
