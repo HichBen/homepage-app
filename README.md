@@ -10,14 +10,14 @@ Link of the api documentation that was deployed in AWS:
 ## Different Endpoints:
 The api has 5 endpoints:
  - Two get methods:
-    - /api/homepage : Which will return the json all available homepages.
-    - /api/homepage/{id} : Which takes a group id and returns json of that group_id's homepage
+    - /homepage : Which will return the json all available homepages.
+    - /homepage/{id} : Which takes a group id and returns json of that group_id's homepage
  
  - Delete method:
-    - /api/homepage/{id} : takes a group_id and deletes the homepage
+    - /homepage/{id} : takes a group_id and deletes the homepage
   
  - Post Method:
-    - /api/homepage : Takes a json and creates a new homepage
+    - /homepage : Takes a json and creates a new homepage
     
  - Patch method :
-    - /api/homepage/{id}/ Takes a json of the fields that the user wants to update and updates them
+    - /homepage/{id}/ Takes a json of the fields that the user wants to update and updates them
