@@ -11,10 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db869af6-5003-4bb0-8348-d591a0a8a921" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/aws.yml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage-service/app/api/homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage-service/app/api/homepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/homepage-service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage-service/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +32,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jcGxf1KRtadwnQRu05kj6PiJ1o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -102,6 +102,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="322" y="153" key="FileChooserDialogImpl" timestamp="1604636369759">
