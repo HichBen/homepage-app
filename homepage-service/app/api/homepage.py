@@ -55,3 +55,4 @@ async def delete_homepage(id: int):
 @homepage.get('/homepage')
 async def get_homepages():
     return await db_manager.get_all_homepages()
+

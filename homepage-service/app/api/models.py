@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import List, Optional
 
 
 class HomePageIn(BaseModel):
@@ -9,6 +9,7 @@ class HomePageIn(BaseModel):
     phone_number: Optional[str] = None
     website: Optional[str] = None
     group_name: str
+    events: Optional[List[int]] = None
 
 
 class HomePageOut(HomePageIn):
@@ -23,6 +24,7 @@ class HomePage(BaseModel):
     phone_number: Optional[str] = None
     website: Optional[str] = None
     group_name: str
+    events: Optional[List[int]] = None
 
 
 class HomePageUpdate(HomePageIn):
@@ -32,3 +34,5 @@ class HomePageUpdate(HomePageIn):
     phone_number: Optional[str] = None
     website: Optional[str] = None
     group_name: Optional[str] = None
+    events: Optional[List[int]] = None
+

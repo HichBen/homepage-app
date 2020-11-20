@@ -20,6 +20,7 @@ homepage = Table(
     Column('email', String(10)),
     Column('phone_number', String(10)),
     Column('website', String(10)),
+    Column('events', ARRAY(Integer)),
     Column('group_name', String(10)),
 )
 
