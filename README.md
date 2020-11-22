@@ -8,7 +8,7 @@ Link of the api documentation that was deployed in AWS:
  - Head over to http://localhost:8080/homepage/docs for the api documentation
  
 ## Different Endpoints:
-The api has 5 endpoints :
+The api has 5 endpoints:
  - Two get methods:
     - /homepage : Which will return the json all available homepages.
     - /homepage/{id} : Which takes a group id and returns json of that group_id's homepage
