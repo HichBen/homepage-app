@@ -5,7 +5,7 @@ Link of the api documentation that was deployed in AWS:
 ## Steps to run it locally
  - Make sure you have installed `docker` and `docker-compose`
  - Run `docker-compose up -d`
- - Head over to http://localhost:8080/homepage/docs for the api documentation
+ - Head over to http://localhost/homepage/docs for the api documentation
  
 ## Different Endpoints:
 The api has 5 endpoints:
